@@ -6,6 +6,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { test1 } from 'hello-typescript-package';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +15,11 @@ ReactDOM.render(
   // NOTE: There is a <div/> in the HTML with this ID.
   document.getElementById('root')
 );
+
+// This demonstrates the ability to call a function from a package
+console.info(test1())
+
+
 
 
 
